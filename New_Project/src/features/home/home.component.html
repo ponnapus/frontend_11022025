@@ -1,0 +1,39 @@
+<title>Responsive Web</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- <link rel="stylesheet" href="styles.scss"> -->
+
+<!-- ✅ Navbar -->
+<nav class="navbar">
+    <div class="menu-btn" (click)="toggleMenu()">
+        ☰ Menu
+    </div>
+    <ul [ngClass]="{ 'active': isMenuOpen }">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</nav>
+
+
+<!-- ✅ Home Section -->
+<section id="home">
+    <div>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/033/119/656/small_2x/indulgent-cat-cartoon-generate-ai-photo.jpg"
+            alt="Cat">
+    </div>
+    <div id="title">
+        <h1 class="texthome">
+            <i class="material-icons">favorite</i>
+            Welcome to Ping Web
+            <i class="material-icons">favorite</i>
+        </h1>
+    </div>
+</section>
+
+<!-- ✅ About Section -->
+<section id="about">
+    <div class="container">
+        <h1 class="text">About Us</h1>
+        <p class="text">Some description...</p>
+    </div>
+</section>

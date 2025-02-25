@@ -1,0 +1,18 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-home',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
+})
+export class HomeComponent {
+  isMenuOpen = false; // เก็บสถานะเมนู
+
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen; // Toggle ค่า true/false
+  }
+}
